@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header><!--En la imagen esta parte parece un aside, pero tiene el logo de la pagina y lo que yo considero que es un nav asi qeu por razones mas que todo de logica decidi hacerlo como un header-->
+            <h1><a href="#">Food</a></h1>
+            <nav><!--Pues lo use porque considero que esto sirve como barra de navegacion de sitio principal-->
+                <ul>
+                    <li><a href="#">Tastemakers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">The-A-List</a></li>
+                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <header><!--El anterior era el header de la pagina, este es el header del contenido del blog-->
+                <p><time datetime="2012-05-23">Wednesday, May 23, 2012</time></p>
+                <h1>2012’s Best Summer Cookbooks</h1>
+            </header>
+            <section><!--En el ejemplo anterior utilice un div en lugar de section, ahora queria probar el section, ya que este es el uso que tiene y deberia cambiar el anterior a section-->
+                <article><!--comienzo de contenido, uso articulo para definir este contenido como la informacion principal del sitio-->
+                    <div><!--Este div esta porque me di cuenta que la parte de la imagen adonde estan los nombre del autor, parece ser una lista y quiero probar hacerlo con un footer-->
+                        <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1476927118300045-fx14.jpg">
+                        <p>With the best of the season coming from “orchards, farms and gardens,” NPR has put together an impressive collection of 10 summer cookbooks.</p>
+                        <blockquote>
+                            <p>Summer is, after all, so often a time of accidental vegetarianism. It’s when even carnivorous folk (myself among them) are seduced by fields and farm stands, lured in by lettuce and tempted by tomatoes. We don’t necessarily set out to go meatless. But a couple of fruit smoothies and several bowls of baby greens later in the lazy heat of a stove-avoiding afternoon, that’s just what happens. And so, to help you make the most of summer’s bounty, here are 10 cookbooks that take their inspiration from that most peaceful of kingdoms — the plant kingdom.</p>
+                        </blockquote>
+                        <p>See the full collection <a href="#">here</a>.</p>
+                        <p><small>Image via <a href="#">NPR</a>.</small></p>
+                    </div>
+                    <footer><!--Me parecio buena idea intentar hacer esta parte del articulo como un pie de pagina del articulo, al igual que un header-->
+                        <ul>
+                            <li><a href="#">Julie Shah Lamba</a></li>
+                            <li><a href="#">Leave a comment</a></li>
+                            <li><a href="#">Cook</a> </li>
+                        </ul>
+                    </footer>
+                </article>
+            </section>
+            <aside><!--el aside para los elementos que se encuentran al lado-->
+                <div class="rss"><a href="#">Subscribe via RSS</a> <a href="#">?</a></div>
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Cook</a></li>
+                    <li><a href="#">Dine</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Know</a></li>
+                    <li><a href="#">Monologues</a></li>
+                    <li><a href="#">My Veg Life</a></li>
+                    <li><a href="#">Read</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Ten Things</a></li>
+                </ul>
+                <div>
+                    <form action="post">
+                        <fieldset>
+                            <input type="search" placeholder="Search">
+                        </fieldset>
+                        <fieldset>
+                            <input type="submit" value="Go">
+                        </fieldset>
+                    </form>                    
+                </div>
+                <h3>Archives</h3>
+                <ul>
+                    <li><a href="#">May 2012</a></li>
+                    <li><a href="#">April 2012</a></li>
+                    <li><a href="#">March 2012</a></li>
+                    <li><a href="#">February 2012</a></li>
+                    <li><a href="#">January 2012</a></li>
+                </ul>
+            </aside>
+        </div>
+        <aside><!--Este aside es el que se muestra debajo del primer header, aun sigo pensando que ese header podria ser un aside y que me equivoque al hacerlo asi, pero de igual manera tambien seria interesante ver como afecta tener ambos aside y header en un mismo lado-->
+            <section class="twitter"><!--Estoy usando section aqui en lugar de div como hice en la otra pagina, porque se me ocurrio que tambien se puede hacer asi, no se si podra causar algun problema a nivel semantico--> 
+                <h1>Latest Tweet</h1>                
+                <p><a href="http://twitter.com"><button>Join the Conversation</button></a></p>
+            </section> 
+            <section class="facebook"><!--Igual que el anterior-->
+                <h1>Let's be friends!</h1>
+                <p>For weekly finds, community recommendations, and more, like us on Facebook.</p>
+            </section>
+        </aside>
+        <footer><!--EL pie de pagina, uso footer para marcar los elementos que estan aqui como parte del pie de pagina para separarlos del contenido del blog-->
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact</a> <br>© 2018 Food, all rights reserved.</p>
+            <div><!--Este div es para las redes sociales que se muestran en la esquina inferior derecha del ejemplo-->
+                <ul>
+                    <li class="twitter"><a href="http://twitter.com">Twitter</a></li>
+                    <li class="facebook"><a href="http://www.facebook.com">Facebook</a></li>
+                    <li class="rss"><a href="#">Subscribe via RSS</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
